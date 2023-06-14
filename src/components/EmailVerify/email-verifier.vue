@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="verifyEmail" class="wrap">
     <input :disabled="isLoading" v-model="email" placeholder="Enter email" required type="email" />
-    <button :disabled="isLoading" >
+    <button :disabled="isLoading">
       {{ isLoading ? '...' : 'Check' }}
     </button>
     <p class="note">Note : Checks are based on validity of domain.</p>
@@ -36,7 +36,7 @@ export default defineComponent({
         this.isLoading = false
         this.email = ''
         this.setEmailVerificationResponse(res.data[0])
-        this.openModal(true)
+        this.openModal()
       } catch (err) {
         this.isLoading = false
       }
@@ -85,7 +85,7 @@ button:hover {
   transition: 0.5s ease;
 }
 
-.note{
+.note {
   color: red;
   font-size: 0.6rem;
   margin-top: 5px;
