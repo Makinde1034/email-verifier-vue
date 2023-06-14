@@ -50,7 +50,7 @@ export default defineComponent({
 <style scoped>
 .modal {
   width: 400px;
-  max-width: 300px;
+
   background-color: black;
   position: absolute;
   transform: translate(-50%, -50%) scale(0.8);
@@ -85,5 +85,11 @@ export default defineComponent({
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+  .modal{
+    max-width: 300px;
+  }
 }
 </style>

@@ -9,8 +9,8 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import api from '@/api'
-import { useModalStore } from '@/stores/counter'
+import api from '../../api'
+import { useModalStore } from '../../stores/counter'
 
 export default defineComponent({
   components: {},

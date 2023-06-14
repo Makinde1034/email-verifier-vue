@@ -7,8 +7,8 @@
 </template>
 
 <script lang="ts">
-import NavComponent from '@/components/icons/Nav/nav.vue'
-import EmailVerifierComponent from '@/components/icons/EmailVerify/email-verifier.vue'
+import NavComponent from '@/components/Nav/nav.vue'
+import EmailVerifierComponent from '@/components/EmailVerify/email-verifier.vue'
 import ModalComponent from '@/components/Modal/modal.vue'
 import { defineComponent } from 'vue'
 
